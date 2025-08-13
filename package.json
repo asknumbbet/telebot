@@ -1,22 +1,18 @@
 {
-  "name": "telebot",
+  "name": "telebot-referral-offers",
   "version": "1.0.0",
-  "description": "",
+  "description": "Telegram referral leaderboard bot (single leaderboard; referrer gets +1 only when referral completes install)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^1.11.0",
+    "axios": "^1.7.2",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "firebase-admin": "^13.4.0",
-    "helmet": "^8.1.0",
-    "node-telegram-bot-api": "^0.66.0",
-    "rate-limiter-flexible": "^7.2.0",
-    "winston": "^3.17.0"
+    "express": "^4.19.2",
+    "firebase-admin": "^11.11.1",
+    "helmet": "^7.1.0",
+    "node-telegram-bot-api": "^0.64.0",
+    "winston": "^3.13.0"
   }
 }
