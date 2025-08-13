@@ -1,13 +1,15 @@
 {
   "name": "telebot-referral-offers",
   "version": "1.0.0",
-  "description": "Telegram referral leaderboard bot (single leaderboard; referrer gets +1 only when referral completes install)",
+  "description": "Telegram referral leaderboard bot (single leaderboard; +1 only when referred user completes install)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "axios": "^1.7.2",
     "dotenv": "^17.2.1",
     "express": "^4.19.2",
     "firebase-admin": "^11.11.1",

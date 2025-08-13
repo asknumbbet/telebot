@@ -1,4 +1,3 @@
-// firebase.js
 const admin = require('firebase-admin');
 
 const svcJsonEnv = process.env.SERVICE_ACCOUNT_JSON || null;
@@ -12,9 +11,10 @@ if (svcJsonEnv) {
     process.exit(1);
   }
 } else {
-  // optional local fallback if you ever add a file; in Railway you must set SERVICE_ACCOUNT_JSON
   try {
+    // local demo fallback only
     serviceAccount = require('./serviceAccount.demo.json');
+    console.warn('WARN: using serviceAccount.demo.json (do not use in production).');
   } catch (_) {
     console.error('FATAL: SERVICE_ACCOUNT_JSON not provided. Set it in Railway Variables.');
     process.exit(1);
